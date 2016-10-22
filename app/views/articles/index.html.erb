@@ -1,4 +1,19 @@
-<h1>Listing all articles</h1>
+
+
+<div class="col-lg-6 col-lg-offset-2">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 --> 
+  <br />
+<br />
+
+
+
+<h1>Regulation Asia Entries</h1>
 <p>
 <%= link_to "Create new article", new_article_path %>
 </p>
@@ -15,10 +30,10 @@
     <td><%= article.id %></td>
     <td><%= article.title %></td>
     <td><%= article.description %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Show', article_path(article) %> </td>
     <td><%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %> </td>
   </tr>
   <% end %>
-
 </table>
+
